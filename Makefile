@@ -4,7 +4,7 @@ CFLAGS = -I./include -nostdlib -fno-builtin -Wall -Wextra
 QEMU = qemu-system-riscv64
 QFLAGS = -nographic -smp 8 -machine virt -bios none
 
-IFLAGS = -npro -kr -i8 -ts8 -sob -l80 -ss -ncs -cp1
+IFLAGS = -npro -kr -i8 -ts8 -sob -l80 -ss -ncs -cp1 -nut
 
 OBJS = $(shell find src/ -name "*.[Sc]" | sed -e "s/.../obj/" -e "s/.$$/o/")
 
